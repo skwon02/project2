@@ -1,7 +1,17 @@
-* {
-  box-sizing: border-box;
-}
+/* Error: Expected '.
+ *   ,
+ * 3 |     font-family: 'Arial, Helvetica, sans-serif
+ *   |                                               ^
+ *   '
+ *   sass/styles.scss 3:47  root stylesheet */
 
-h2 p {
-  font-family: Arial, Helvetica, sans-serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected '.\a   \2577 \a 3 \2502      font-family: 'Arial, Helvetica, sans-serif\a   \2502                                                ^\a   \2575 \a   sass/styles.scss 3:47  root stylesheet";
 }
