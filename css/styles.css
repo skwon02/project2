@@ -22,7 +22,7 @@ h1 {
 
 p {
   font-family: Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: normal;
   margin: 0;
 }
@@ -36,7 +36,6 @@ ul li {
 
 .wrapper {
   margin: auto;
-  position: relative;
 }
 
 .upper-box {
@@ -70,21 +69,21 @@ ul li {
 .info-wrapper {
   border: 1px solid red;
   width: 30%;
-  position: relative;
 }
 
 .below-box {
   border: 1px solid red;
   margin: 0 5%;
+  display: flex;
 }
 
 .intro-wrapper, .recipe-wrapper {
-  border: 1px solid red;
+  border: 1px solid green;
   width: 50%;
 }
 
 .supplement-wrapeer {
-  border: 1px solid red;
+  border: 1px solid green;
   width: 50%;
   float: left;
 }

@@ -15,7 +15,7 @@
 @mixin medium-text {
     font: {
         family: Helvetica, sans-serif;
-        size: 30px;
+        size: 26px;
         weight: normal;
     }
 }
@@ -28,8 +28,11 @@
     }
 }
 
-@mixin border {
+@mixin red-border {
     border: 1px solid red;
+}
+@mixin green-border {
+    border: 1px solid green;
 }
 
 html,
@@ -60,12 +63,11 @@ ul li {
 
 .wrapper {
     margin: auto;
-    position: relative;
 }
 
 // upper
 .upper-box{
-    @include border;
+    @include red-border;
     margin: 0 5%;
 }
 .swiss,
@@ -92,24 +94,26 @@ ul li {
 }
 
 .info-wrapper{
-    @include border;
+    @include red-border;
     width: 30%;
-    position: relative;
 
 }
 
 //below
 .below-box{
-    @include border;
+    @include red-border;
     margin: 0 5%;
+    display: flex;
+
 }
 
 .intro-wrapper, .recipe-wrapper{
-    @include border;
+    @include green-border;
     width: 50%;
+    
 }
 .supplement-wrapeer{
-    @include border;
+    @include green-border;
     width: 50%;
     float: left;
 }
