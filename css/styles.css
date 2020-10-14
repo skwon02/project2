@@ -70,14 +70,12 @@ ul li {
 
 .info-wrapper {
   transform: rotate(90deg);
+  display: inline-block;
   border: 1px solid red;
   width: 30%;
   position: absolute;
   top: 0;
   right: 0;
-}
-.info-wrapper ul {
-  margin-left: -16px;
 }
 
 .below-box {
@@ -102,9 +100,13 @@ ul li {
 }
 .intro-wrapper .intro2 {
   padding-left: 2em;
+  margin: -5px 0;
 }
 .intro-wrapper .intro3 {
   padding-left: 4em;
+}
+.intro-wrapper .intro3 p {
+  margin: -5px 0;
 }
 
 .recipe-wrapper {
@@ -114,7 +116,7 @@ ul li {
 .recipe-wrapper > div {
   display: grid;
   grid-template-columns: 2em 3fr 60px;
-  margin-bottom: -6px;
+  margin-bottom: -5px;
 }
 
 .recipe-title {
@@ -156,7 +158,7 @@ ul li {
 .supplement-wrapeer > div {
   display: grid;
   grid-template-columns: 4fr 60px;
-  margin-bottom: -6px;
+  margin-bottom: -5px;
 }
 
 .supplement-title {

@@ -58,7 +58,6 @@ p {
 ul li {
     @include small-text;
     list-style: none;
-    // transform: rotate(90deg);
 }
 
 .wrapper {
@@ -93,14 +92,12 @@ ul li {
 }
 .info-wrapper{
     transform:rotate(90deg);
+    display:inline-block;
     @include red-border;
     width: 30%;
     position: absolute;
     top:0;
     right:0;
-    ul{
-        margin-left:-16px;
-   }
 }
 
 //below
@@ -125,9 +122,14 @@ ul li {
    grid-area: intro;
    .intro2{
     padding-left: 2em;
+    margin: -5px 0;
    }
    .intro3{
     padding-left: 4em;
+    p {
+    margin: -5px 0;
+    }
+    
    }
 }
 
@@ -137,7 +139,7 @@ ul li {
 .recipe-wrapper > div {
     display: grid;
     grid-template-columns: 2em 3fr 60px;
-    margin-bottom: -6px;
+    margin-bottom: -5px;
 }
 .recipe-title{
     padding-bottom: 3px;
@@ -173,7 +175,7 @@ ul li {
 .supplement-wrapeer > div {
     display: grid;
     grid-template-columns: 4fr 60px;
-    margin-bottom: -6px;
+    margin-bottom: -5px;
 }
 
 .supplement-title {
