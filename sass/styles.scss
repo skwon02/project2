@@ -48,7 +48,6 @@ body {
 h1 {
     @include large-text;
     margin: 0;
-    background-color: #fb0c1b;
     padding: 60px 20px;
 }
 
@@ -69,6 +68,7 @@ ul {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    padding: 1em;
 }
 
 // upper
@@ -87,6 +87,17 @@ ul {
     "swiss bagel salad"
     "swiss bagel salad"
     "swiss bagel salad"
+}
+.title-wrapper.text{
+    position: absolute;
+    top:0;  
+    left:0;
+}
+.background h1{
+    background-color: #fb0c1b;
+}
+.text h1{
+    color: white;
 }
 .swiss,
 .bagel,
