@@ -96,6 +96,7 @@ ul li {
 
 .recipe-wrapper {
   grid-area: recipe;
+  padding: 0;
 }
 
 .supplement-wrapeer {
