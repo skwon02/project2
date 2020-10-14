@@ -69,10 +69,6 @@ ul li {
   background-color: #fb0c1b;
 }
 
-.text h1 {
-  color: white;
-}
-
 .swiss,
 .bagel,
 .salad {
@@ -243,7 +239,7 @@ ul li {
   padding-left: 1em;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 600px) {
   .title-wrapper {
     transform: rotateZ(70deg);
   }
@@ -261,5 +257,13 @@ ul li {
     position: absolute;
     top: -50px;
     left: -50px;
+  }
+
+  h1 {
+    font-size: 10em;
+  }
+
+  .below-box {
+    grid-template-areas: " intro intro supplement supplement" " recipe recipe supplement supplement";
   }
 }
