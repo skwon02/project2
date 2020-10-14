@@ -241,12 +241,7 @@ ul li {
 
 @media (min-width: 600px) {
   .title-wrapper {
-    transform: rotateZ(70deg);
-  }
-  .title-wrapper .salad {
-    position: absolute;
-    top: -50px;
-    left: -50px;
+    grid-template-areas: "swiss swiss swiss" "bagel bagel bagel" "salad salad salad";
   }
 }
 @media (min-width: 840px) {

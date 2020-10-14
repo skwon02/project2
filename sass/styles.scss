@@ -263,12 +263,16 @@ ul {
 //midea queries
 @media (min-width: 600px) {
     .title-wrapper {
-        transform: rotateZ(70deg);
-        .salad{
-            position: absolute;
-            top:-50px;
-            left:-50px;
-        }
+        grid-template-areas:
+        "swiss swiss swiss"
+        "bagel bagel bagel"
+        "salad salad salad"
+        // transform: rotateZ(70deg);
+        // .salad{
+        //     position: absolute;
+        //     top:-50px;
+        //     left:-50px;
+        // }
     }
   }
   
