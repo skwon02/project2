@@ -85,13 +85,21 @@ ul li {
   width: 100%;
 }
 
-.intro-wrapper, .recipe-wrapper {
+.intro-wrapper, .recipe-wrapper, .supplement-wrapeer {
   border: 1px solid green;
-  min-width: 240px;
+}
+
+.intro-wrapper {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.recipe-wrapper {
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .supplement-wrapeer {
-  border: 1px solid green;
-  width: 50%;
-  float: left;
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
