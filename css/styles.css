@@ -31,7 +31,6 @@ ul li {
   font-size: 14px;
   font-weight: normal;
   list-style: none;
-  transform: rotate(90deg);
 }
 
 .wrapper {
@@ -59,4 +58,10 @@ ul li {
 
 .salad {
   transform: rotate(80deg);
+}
+
+.below-box {
+  border: 1px solid red;
+  margin: 2% 2% 0 2%;
+  display: grid;
 }

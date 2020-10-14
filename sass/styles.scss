@@ -36,7 +36,6 @@ html,
 body,
 .wrapper {
     height: 100%;
-
 }
 
 body {
@@ -55,7 +54,7 @@ p {
 ul li {
     @include small-text;
     list-style: none;
-    transform: rotate(90deg);
+    // transform: rotate(90deg);
 }
 
 .wrapper {
@@ -83,4 +82,10 @@ ul li {
 
 .salad {
     transform: rotate(80deg);
+}
+
+.below-box{
+    @include border;
+    margin: 2% 2% 0 2%;
+    display: grid;
 }
