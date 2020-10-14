@@ -9,7 +9,7 @@
         weight: normal;
     }
     color: white;
-  }
+}
 
 @mixin medium-text {
     font: {
@@ -17,7 +17,7 @@
         size: 30px;
         weight: normal;
     }
-  }
+}
 
 @mixin small-text {
     font: {
@@ -25,15 +25,18 @@
         size: 14px;
         weight: normal;
     }
-  } 
-  
+} 
+
 @mixin border {
     border: 1px solid red;
 }
 
+html, body, .wrapper{
+    height: 100%;
+}
+
 body{
     margin:0;
-    padding: 0;
 }
 
 h1 {
