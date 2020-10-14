@@ -60,6 +60,7 @@ ul li {
 
 .wrapper {
     margin: auto;
+    position: relative;
 }
 
 // upper
@@ -110,4 +111,5 @@ ul li {
 .supplement-wrapeer{
     @include border;
     width: 50%;
+    float: left;
 }

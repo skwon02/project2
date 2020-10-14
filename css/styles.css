@@ -36,6 +36,7 @@ ul li {
 
 .wrapper {
   margin: auto;
+  position: relative;
 }
 
 .upper-box {
@@ -85,4 +86,5 @@ ul li {
 .supplement-wrapeer {
   border: 1px solid red;
   width: 50%;
+  float: left;
 }
