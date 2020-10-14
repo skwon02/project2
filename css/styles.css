@@ -107,10 +107,28 @@ ul li {
 .recipe-wrapper > div {
   display: grid;
   grid-template-columns: 2em 3fr 60px;
+  margin-bottom: 0 -10px;
 }
 
-.recipe-wrapper:nth-child(2) {
+.recipe-title {
+  padding-bottom: 3px;
+  border-bottom: 2px solid black;
+}
+
+.raclette .m-name {
+  padding-left: 3em;
+}
+
+.valaisan .m-name {
   padding-left: 2em;
+}
+
+.bais .m-name {
+  padding-left: 2.5em;
+}
+
+.heidi .m-name {
+  padding-left: 3.5em;
 }
 
 .recipe-title .title {
