@@ -99,28 +99,31 @@ ul li {
   padding: 0;
   display: grid;
   grid-gap: 10px;
-  grid-column: span 2;
+  grid-column: auto/span 2;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(7, auto);
-  grid-template-areas: "recipe-title recipe-title recipe-title" "valaisan valaisan valaisan" "02 02 02" "03 03 03" "04 04 04" "05 05 05";
+  grid-template-areas: "recipe-title recipe-title recipe-title" "raclette raclette raclette" "valaisan valaisan valaisan" "rosti rosti rosti" "bais bais bais" "heidi heidi heidi" "Leman Leman Leman";
 }
 .recipe-wrapper .recipe-title {
   grid-area: recipe-title;
+}
+.recipe-wrapper .raclette {
+  grid-area: raclette;
 }
 .recipe-wrapper .valaisan {
   grid-area: valaisan;
 }
 .recipe-wrapper .rosti {
-  grid-area: 2;
+  grid-area: rosti;
 }
 .recipe-wrapper .bais {
-  grid-area: 3;
+  grid-area: bais;
 }
 .recipe-wrapper .heidi {
-  grid-area: 4;
+  grid-area: heidi;
 }
 .recipe-wrapper .Leman {
-  grid-area: 5;
+  grid-area: Leman;
 }
 
 .supplement-wrapeer {
