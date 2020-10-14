@@ -74,12 +74,13 @@ ul li {
 .below-box {
   border: 1px solid red;
   margin: 0 5%;
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .intro-wrapper, .recipe-wrapper {
   border: 1px solid green;
-  width: 50%;
+  min-width: 240px;
 }
 
 .supplement-wrapeer {

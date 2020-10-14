@@ -103,14 +103,19 @@ ul li {
 .below-box{
     @include red-border;
     margin: 0 5%;
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
+    
 
 }
 
 .intro-wrapper, .recipe-wrapper{
     @include green-border;
-    width: 50%;
+    min-width: 240px;
     
+}
+.intro-wrapper{
+   
 }
 .supplement-wrapeer{
     @include green-border;
