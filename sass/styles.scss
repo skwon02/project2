@@ -82,23 +82,24 @@ ul li {
     padding: 0;
     text-align: center;
 }
-
 .swiss {
     transform: rotate(270deg);
 }
-
 .bagel {
     transform: rotate(110deg);
 }
-
 .salad {
     transform: rotate(80deg);
 }
-
 .info-wrapper{
     @include red-border;
     width: 30%;
-
+    position: absolute;
+    top:0;
+    right:0;
+    ul{
+        margin-left:-16px;
+   }
 }
 
 //below
@@ -126,7 +127,7 @@ ul li {
     padding-left: 2em;
    }
    .intro3{
-    padding-left: 5em;
+    padding-left: 4em;
    }
 }
 
@@ -136,7 +137,7 @@ ul li {
 .recipe-wrapper > div {
     display: grid;
     grid-template-columns: 2em 3fr 60px;
-    margin-bottom: 0 -10px;
+    margin-bottom: -7x;
 }
 .recipe-title{
     padding-bottom: 3px;
@@ -149,10 +150,10 @@ ul li {
     padding-left: 2em;
 }
 .bais .m-name {
-    padding-left: 2.5em;
+    padding-left: 2em;
 }
 .heidi .m-name {
-    padding-left: 3.5em;
+    padding-left: 4em;
 }
 .recipe-title .title {
     grid-column : 1 / 3;

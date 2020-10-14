@@ -71,6 +71,12 @@ ul li {
 .info-wrapper {
   border: 1px solid red;
   width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.info-wrapper ul {
+  margin-left: -16px;
 }
 
 .below-box {
@@ -97,7 +103,7 @@ ul li {
   padding-left: 2em;
 }
 .intro-wrapper .intro3 {
-  padding-left: 5em;
+  padding-left: 4em;
 }
 
 .recipe-wrapper {
@@ -107,7 +113,7 @@ ul li {
 .recipe-wrapper > div {
   display: grid;
   grid-template-columns: 2em 3fr 60px;
-  margin-bottom: 0 -10px;
+  margin-bottom: -7x;
 }
 
 .recipe-title {
@@ -124,11 +130,11 @@ ul li {
 }
 
 .bais .m-name {
-  padding-left: 2.5em;
+  padding-left: 2em;
 }
 
 .heidi .m-name {
-  padding-left: 3.5em;
+  padding-left: 4em;
 }
 
 .recipe-title .title {
