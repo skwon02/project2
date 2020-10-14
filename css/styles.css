@@ -28,7 +28,7 @@ p {
 }
 
 ul {
-  padding-left: 0;
+  padding: 0;
 }
 ul li {
   font-family: Helvetica, sans-serif;
@@ -46,13 +46,12 @@ ul li {
   position: absolute;
   top: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
 }
 
 .title-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .swiss,
@@ -67,11 +66,13 @@ ul li {
 
 .info-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  position: absolute;
+  right: 0;
   border: 1px solid red;
 }
 
-.contact .content .social-media {
+.contact, .content, .social-media {
   writing-mode: vertical-rl;
 }
 
