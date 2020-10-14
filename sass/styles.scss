@@ -44,6 +44,8 @@ p {
 ul li{
     @include small-text;
     list-style: none;
+    transform: rotate(90deg);
+    
 }
 
 .wrapper{
@@ -57,9 +59,17 @@ ul li{
     margin: 0;
     padding: 0;
     text-align: center;
-    }
+}
 
-    .swiss{
-        transform: rotate(deg);
-    }
+.swiss {
+    transform: rotate(270deg);
+}
+
+.bagel {
+    transform: rotate(110deg);
+}
+
+.salad {
+    transform: rotate(80deg);
+}
 
