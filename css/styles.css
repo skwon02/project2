@@ -77,7 +77,7 @@ ul li {
   border: 1px solid red;
   position: absolute;
   display: grid;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 2%;
   grid-template-rows: repeat(2, 150px);
   grid-row-gap: 10px;
