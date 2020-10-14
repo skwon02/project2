@@ -18,6 +18,8 @@ h1 {
   font-weight: normal;
   color: white;
   margin: 0;
+  background-color: #fb0c1b;
+  padding: 60px 20px;
 }
 
 p {
@@ -50,24 +52,47 @@ ul li {
 
 .title-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  width: 80%;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "swiss bagel salad" "swiss bagel salad" "swiss bagel salad";
 }
 
 .swiss,
 .bagel,
 .salad {
-  writing-mode: vertical-rl;
-  background-color: #fb0c1b;
+  writing-mode: vertical-lr;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
+.swiss {
+  grid-area: swiss;
+}
+.swiss h1 {
+  transform: rotateZ(180deg);
+}
+
+.bagel {
+  grid-area: bagel;
+}
+.bagel h1 {
+  transform: rotateZ(192deg) translate(40px, -100px);
+}
+
+.salad {
+  grid-area: salad;
+}
+.salad h1 {
+  transform: rotateZ(170deg);
+}
+
 .info-wrapper {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 3fr 3fr 1fr;
   position: absolute;
+  top: 0;
   right: 0;
   border: 1px solid red;
 }
