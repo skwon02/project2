@@ -8,6 +8,7 @@
         size: 8em;
         weight: normal;
     }
+
     color: white;
 }
 
@@ -30,6 +31,7 @@
 @mixin red-border {
     border: 1px solid red;
 }
+
 @mixin green-border {
     border: 1px solid green;
 }
@@ -57,11 +59,13 @@ p {
 
 ul {
     padding: 0;
+
     li {
-    @include small-text;
-    list-style: none;
+        @include small-text;
+        list-style: none;
     }
 }
+
 .wrapper {
     margin: auto;
     display: flex;
@@ -71,30 +75,34 @@ ul {
 }
 
 // upper
-.upper-box{
+.upper-box {
     // @include red-border;
     // position: absolute;
     position: relative;
     width: 100%;
 }
-.title-wrapper{
-    display:grid;
+
+.title-wrapper {
+    display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     width: 80%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "swiss bagel salad"
-    "swiss bagel salad"
-    "swiss bagel salad"
+        "swiss bagel salad"
+        "swiss bagel salad"
+        "swiss bagel salad"
 }
-.title-wrapper.text{
+
+.title-wrapper.text {
     position: absolute;
-    top:0;  
-    left:0;
+    top: 0;
+    left: 0;
 }
-.background h1{
+
+.background h1 {
     background-color: #fb0c1b;
 }
+
 .swiss,
 .bagel,
 .salad {
@@ -103,41 +111,49 @@ ul {
     padding: 0;
     text-align: center;
 }
+
 .swiss {
     grid-area: swiss;
+
     h1 {
-    transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
     }
 }
+
 .bagel {
     grid-area: bagel;
-    h1{
-        transform: rotateZ(192deg)
-        translateY(-80px);
+
+    h1 {
+        transform: rotateZ(192deg) translateY(-80px);
     }
-    
+
 }
+
 .salad {
     grid-area: salad;
-    h1{
+
+    h1 {
         transform: rotateZ(170deg);
     }
 }
 
-.info-wrapper{
+.info-wrapper {
     display: grid;
     grid-template-rows: 1.5fr 3fr 1fr;
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     // @include red-border;
 }
-.contact, .content, .social-media{
+
+.contact,
+.content,
+.social-media {
     writing-mode: vertical-rl;
 }
 
 //below
-.below-box{
+.below-box {
     // @include red-border;
     // position: absolute;
     display: grid;
@@ -147,69 +163,83 @@ ul {
     grid-row-gap: 10px;
     width: 100%;
     z-index: 2;
-    grid-template-areas: 
-    " intro intro supplement supplement"
-    " recipe recipe supplement supplement"
-}
-.intro-wrapper{
-   grid-area: intro;
-   padding-bottom: 20px;
-   .intro2{
-    padding-left: 2em;
-    margin: -5px 0;
-   }
-   .intro3{
-    padding-left: 4em;
-    p {
-    margin: -5px 0;
-    }
-    
-   }
+    grid-template-areas:
+        " intro intro supplement supplement"
+        " recipe recipe supplement supplement"
 }
 
-.recipe-wrapper{
+.intro-wrapper {
+    grid-area: intro;
+    padding-bottom: 20px;
+
+    .intro2 {
+        padding-left: 2em;
+        margin: -5px 0;
+    }
+
+    .intro3 {
+        padding-left: 4em;
+
+        p {
+            margin: -5px 0;
+        }
+
+    }
+}
+
+.recipe-wrapper {
     grid-area: recipe;
 }
-.recipe-wrapper > div {
+
+.recipe-wrapper>div {
     display: grid;
     grid-template-columns: 2em 3fr 60px;
     margin-bottom: -5px;
 }
-.recipe-title{
+
+.recipe-title {
     padding-bottom: 3px;
-    border-bottom: 2px solid black;   
+    border-bottom: 2px solid black;
 }
 
-.raclette{
+.raclette {
     margin-top: 7px;
+
     .m-name {
         padding-left: 3em;
-     }
+    }
 }
+
 .valaisan .m-name {
     padding-left: 2em;
 }
+
 .bais .m-name {
     padding-left: 2em;
 }
+
 .heidi .m-name {
     padding-left: 4em;
 }
+
 .recipe-title .title {
-    grid-column : 1 / 3;
+    grid-column: 1 / 3;
 }
-.supplement-wrapeer{
+
+.supplement-wrapeer {
     grid-area: supplement;
-    .m-price{
+
+    .m-price {
         text-align: right;
         padding-right: 0.2em;
     }
 }
+
 // .menu-etudiant, .bagel-boisson{
 //     grid-area: menu-etudiant;
 // }
 
-.supplement-wrapeer > div {
+.supplement-wrapeer>div {
     display: grid;
     grid-template-columns: 4fr 60px;
     margin-bottom: -5px;
@@ -217,82 +247,76 @@ ul {
 
 .supplement-title {
     padding-bottom: 3px;
-    border-bottom: 2px solid black;  
+    border-bottom: 2px solid black;
 }
 
-.sauce{
+.sauce {
     margin-top: 7px;
 }
 
-.ketchup{
+.ketchup {
     padding-left: 1.5em;
 }
 
-.Mayo{
-    padding-left: 2em;
-}
-.Moutarde{
-    padding-left: 2.5em;
-}
-.tartare{
+.Mayo {
     padding-left: 2em;
 }
 
-.barquette{
+.Moutarde {
+    padding-left: 2.5em;
+}
+
+.tartare {
+    padding-left: 2em;
+}
+
+.barquette {
     padding: 10px 0;
 }
 
-.rivella{
+.rivella {
     padding-left: 1.5em;
 }
-.cola{
+
+.cola {
     padding-left: 1em;
 }
-.ice-tea{
+
+.ice-tea {
     padding-left: 2em;
     padding-bottom: 10px;
 }
-.menu-etudiant{
-    border-top: 2px solid black; 
+
+.menu-etudiant {
+    border-top: 2px solid black;
 }
 
-.bagel-boisson .m-name{
-        padding-left: 1em;
- }    
+.bagel-boisson .m-name {
+    padding-left: 1em;
+}
 
 //midea queries
 @media (min-width: 600px) {
     .title-wrapper {
         grid-template-areas:
-        "swiss swiss swiss"
-        "bagel bagel bagel"
-        "salad salad salad"
-        // transform: rotateZ(70deg);
-        // .salad{
-        //     position: absolute;
-        //     top:-50px;
-        //     left:-50px;
-        // }
+            "swiss swiss swiss"
+            "bagel bagel bagel"
+            "salad salad salad"
     }
-  }
-  
-  @media (min-width: 840px) {
-    .title-wrapper {
-        transform: rotateZ(90deg);
-        .salad{
-            position: absolute;
-            top:-50px;
-            left:-50px;
-        }
+    .swiss,
+    .bagel,
+    .salad {
+        writing-mode: unset;
     }
-    h1{
-        font-size: 10em;
+    .swiss h1{
+        transform: rotate();
     }
-  }
-@media (min-width: 970px){
-    .below-box{
-        grid-template-areas: 
-        " intro recipe supplement menu-etudiant"
-        " intro recipe supplement menu-etudiant"
+}
+
+@media (min-width: 970px) {
+    .below-box {
+        grid-template-areas:
+            " intro recipe supplement menu-etudiant"
+            " intro recipe supplement menu-etudiant"
     }
 }

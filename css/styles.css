@@ -107,7 +107,9 @@ ul li {
   right: 0;
 }
 
-.contact, .content, .social-media {
+.contact,
+.content,
+.social-media {
   writing-mode: vertical-rl;
 }
 
@@ -243,19 +245,15 @@ ul li {
   .title-wrapper {
     grid-template-areas: "swiss swiss swiss" "bagel bagel bagel" "salad salad salad";
   }
-}
-@media (min-width: 840px) {
-  .title-wrapper {
-    transform: rotateZ(90deg);
-  }
-  .title-wrapper .salad {
-    position: absolute;
-    top: -50px;
-    left: -50px;
+
+  .swiss,
+.bagel,
+.salad {
+    writing-mode: unset;
   }
 
-  h1 {
-    font-size: 10em;
+  .swiss h1 {
+    transform: rotate();
   }
 }
 @media (min-width: 970px) {
