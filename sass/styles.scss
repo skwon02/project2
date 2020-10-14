@@ -116,7 +116,6 @@ ul li {
     grid-template-areas: 
     " intro intro supplement supplement"
     " recipe recipe supplement supplement"
-    // height: 33%;
 }
 .intro-wrapper, .recipe-wrapper, .supplement-wrapeer{
     @include green-border;
@@ -137,15 +136,18 @@ ul li {
 .recipe-wrapper > div {
     display: grid;
     grid-template-columns: 2em 3fr 60px;
-    margin-bottom: -7x;
+    margin-bottom: -6px;
 }
 .recipe-title{
     padding-bottom: 3px;
     border-bottom: 2px solid black;   
 }
-.raclette .m-name {
-    padding-left: 3em;
- }
+.raclette{
+    margin-top: 7px;
+    .m-name {
+        padding-left: 3em;
+     }
+}
 .valaisan .m-name {
     padding-left: 2em;
 }
@@ -165,5 +167,42 @@ ul li {
 .supplement-wrapeer > div {
     display: grid;
     grid-template-columns: 4fr 60px;
+    margin-bottom: -6px;
 }
 
+.supplement-title {
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;  
+}
+
+.sauce{
+    margin-top: 7px;
+}
+
+.ketchup{
+    padding-left: 1.5em;
+}
+
+.Mayo{
+    padding-left: 2em;
+}
+.Moutarde{
+    padding-left: 2.5em;
+}
+.tartare{
+    padding-left: 2em;
+}
+
+.barquette{
+    padding: 10px 0;
+}
+
+.rivella{
+    padding-left: 1.5em;
+}
+.cola{
+    padding-left: 1em;
+}
+.ice-tea{
+    padding-left: 2.5em;
+}
