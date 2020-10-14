@@ -56,7 +56,7 @@ p {
 }
 
 ul {
-    padding-left: -40px;
+    padding-left: 0;
     li {
     @include small-text;
     list-style: none;
@@ -75,31 +75,35 @@ ul {
     display:grid;
     grid-template-columns: 3fr 1fr;
 }
+.title-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .swiss,
 .bagel,
 .salad {
+    writing-mode: vertical-rl;
     background-color: #fb0c1b;
-    width: 410px;
-    height: 150px;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.swiss {
-    transform: rotate(270deg);
-}
-.bagel {
-    transform: rotate(110deg);
-}
-.salad {
-    transform: rotate(80deg);
-}
+// .swiss {
+//     transform: rotate(270deg);
+// }
+// .bagel {
+//     transform: rotate(110deg);
+// }
+// .salad {
+//     transform: rotate(80deg);
+// }
 .info-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     @include red-border;
-    height: 30%;
-    position: absolute;
-    right:0;
-
+}
+.contact .content .social-media{
+    writing-mode: vertical-rl;
 }
 
 //below
