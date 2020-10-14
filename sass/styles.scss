@@ -68,7 +68,9 @@ ul li {
 // upper
 .upper-box{
     @include red-border;
-    margin: 0 5%;
+    position: absolute;
+    top:0;
+    width: 100%;
 }
 .swiss,
 .bagel,
@@ -102,9 +104,11 @@ ul li {
 //below
 .below-box{
     @include red-border;
-    margin: 0 5%;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
+    // flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     
 
 }
