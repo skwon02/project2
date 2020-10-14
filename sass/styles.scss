@@ -308,9 +308,17 @@ ul {
     .salad {
         writing-mode: unset;
     }
-    .swiss h1{
-        transform: rotate();
+
+    .swiss h1 {
+        transform: rotate(-2deg);
     }
+    .bagel h1 {
+        transform: rotateZ(11deg);
+    }
+    .salad h1 {
+        transform: rotate(-4deg);
+    }
+   
 }
 
 @media (min-width: 970px) {
