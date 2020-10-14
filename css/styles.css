@@ -27,6 +27,9 @@ p {
   margin: 0;
 }
 
+ul {
+  padding-left: -40px;
+}
 ul li {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
@@ -43,6 +46,8 @@ ul li {
   position: absolute;
   top: 0;
   width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .swiss,
@@ -69,17 +74,13 @@ ul li {
 }
 
 .info-wrapper {
-  transform: rotate(90deg);
-  display: inline-block;
   border: 1px solid red;
-  width: 30%;
+  height: 30%;
   position: absolute;
-  top: 0;
   right: 0;
 }
 
 .below-box {
-  border: 1px solid red;
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -89,10 +90,6 @@ ul li {
   bottom: 0;
   width: 100%;
   grid-template-areas: " intro intro supplement supplement" " recipe recipe supplement supplement";
-}
-
-.intro-wrapper, .recipe-wrapper, .supplement-wrapeer {
-  border: 1px solid green;
 }
 
 .intro-wrapper {

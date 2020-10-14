@@ -55,11 +55,13 @@ p {
     margin: 0;
 }
 
-ul li {
+ul {
+    padding-left: -40px;
+    li {
     @include small-text;
     list-style: none;
+    }
 }
-
 .wrapper {
     margin: auto;
 }
@@ -70,6 +72,8 @@ ul li {
     position: absolute;
     top:0;
     width: 100%;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
 }
 .swiss,
 .bagel,
@@ -91,18 +95,16 @@ ul li {
     transform: rotate(80deg);
 }
 .info-wrapper{
-    transform:rotate(90deg);
-    display:inline-block;
     @include red-border;
-    width: 30%;
+    height: 30%;
     position: absolute;
-    top:0;
     right:0;
+
 }
 
 //below
 .below-box{
-    @include red-border;
+    // @include red-border;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -114,9 +116,6 @@ ul li {
     grid-template-areas: 
     " intro intro supplement supplement"
     " recipe recipe supplement supplement"
-}
-.intro-wrapper, .recipe-wrapper, .supplement-wrapeer{
-    @include green-border;
 }
 .intro-wrapper{
    grid-area: intro;
