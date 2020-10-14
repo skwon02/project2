@@ -136,51 +136,44 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, auto);
     .recipe-title{
-        grid-area: recipe-title;
+        .title{
+            grid-column: 1 / 3;
+        }
+        .price{
+            grid-column: 4 / 5;
+        }
     }
     .raclette{
-        grid-area: raclette;
+        .m-number{
+            grid-column: 1 / 2;
+            grid-row: 2;
+        }
+        .m-name{
+            grid-column: 3 / 4;
+            grid-row: 2;
+        }
+        .m-price{
+            grid-column: 1;
+            grid-row: 2;
+        }
+    
     }
     .valaisan{
-        grid-area: valaisan;
+     
     }
     .rosti{
-        grid-area: rosti;
+      
     }
     .bais{
-        grid-area: bais;
+      
     }
     .heidi{
-        grid-area: heidi;
+       
     }
     .Leman{
-        grid-area: Leman;
+    
     }
-    grid-template-areas: 
-    "recipe-title recipe-title recipe-title"
-    "raclette raclette raclette"
-    "valaisan valaisan valaisan"
-    "rosti rosti rosti"
-    "bais bais bais"
-    "heidi heidi heidi"
-    "Leman Leman Leman"
 }
-.title{
-    grid-area: title;
-}
-.price{
-    grid-area: price;
-}
-.m-number{
-    grid-area: m-number;
-}
-.m-name{
-    grid-area: m-name;
-}
-.m-price{
-    grid-area: m-price;
-}
-
 .supplement-wrapeer{
     grid-area: supplement;
 }
