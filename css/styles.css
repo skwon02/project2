@@ -93,6 +93,12 @@ ul li {
 .intro-wrapper {
   grid-area: intro;
 }
+.intro-wrapper .intro2 {
+  padding-left: 1em;
+}
+.intro-wrapper .intro3 {
+  padding-left: 2em;
+}
 
 .recipe-wrapper {
   grid-area: recipe;
