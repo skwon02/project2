@@ -136,6 +136,12 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 3fr 60px;
 }
+.recipe-wrapper:nth-child(1) {
+    padding-left: 1em;
+ }
+ .recipe-wrapper:nth-child(1) {
+    padding-left: 1em;
+ }
 .recipe-title .title {
     grid-column : 1 / 3;
 }
