@@ -262,7 +262,14 @@ ul {
  }    
 
 //midea queries
-@media (min-width: 560px) {
+@media (min-width: 740px) {
+    .title-wrapper {
+        transform: rotateZ(70deg);
+        .salad{
+            position: relative;
+            
+        }
+    }
     // nav {
     //   display: inline-block;
     //   margin-top: 0;

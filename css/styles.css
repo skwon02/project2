@@ -242,3 +242,12 @@ ul li {
 .bagel-boisson .m-name {
   padding-left: 1em;
 }
+
+@media (min-width: 740px) {
+  .title-wrapper {
+    transform: rotateZ(70deg);
+  }
+  .title-wrapper .salad {
+    position: relative;
+  }
+}
