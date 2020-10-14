@@ -137,24 +137,84 @@ ul li {
     grid-template-rows: repeat(7, auto);
     .recipe-title{
         grid-area: recipe-title;
+        .title{
+            grid-area: title;
+        }
+        .price{
+            grid-area: price;
+        }
     }
     .raclette{
         grid-area: raclette;
+        .m-number{
+            grid-area: m-number;
+        }
+        .m-name{
+            grid-area: m-name;
+        }
+        .m-price{
+            grid-area: m-price;
+        }
     }
     .valaisan{
         grid-area: valaisan;
+        .m-number{
+            grid-area: m-number;
+        }
+        .m-name{
+            grid-area: m-name;
+        }
+        .m-price{
+            grid-area: m-price;
+        }
     }
     .rosti{
         grid-area: rosti;
+        .m-number{
+            grid-area: m-number;
+        }
+        .m-name{
+            grid-area: m-name;
+        }
+        .m-price{
+            grid-area: m-price;
+        }
     }
     .bais{
         grid-area: bais;
+        .m-number{
+            grid-area: m-number;
+        }
+        .m-name{
+            grid-area: m-name;
+        }
+        .m-price{
+            grid-area: m-price;
+        }
     }
     .heidi{
         grid-area: heidi;
+        .m-number{
+            grid-area: m-number;
+        }
+        .m-name{
+            grid-area: m-name;
+        }
+        .m-price{
+            grid-area: m-price;
+        }
     }
     .Leman{
         grid-area: Leman;
+        .m-number{
+            grid-area: m-number;
+        }
+        .m-name{
+            grid-area: m-name;
+        }
+        .m-price{
+            grid-area: m-price;
+        }
     }
 
     grid-template-areas: 

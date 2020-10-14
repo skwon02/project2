@@ -107,23 +107,83 @@ ul li {
 .recipe-wrapper .recipe-title {
   grid-area: recipe-title;
 }
+.recipe-wrapper .recipe-title .title {
+  grid-area: title;
+}
+.recipe-wrapper .recipe-title .price {
+  grid-area: price;
+}
 .recipe-wrapper .raclette {
   grid-area: raclette;
+}
+.recipe-wrapper .raclette .m-number {
+  grid-area: m-number;
+}
+.recipe-wrapper .raclette .m-name {
+  grid-area: m-name;
+}
+.recipe-wrapper .raclette .m-price {
+  grid-area: m-price;
 }
 .recipe-wrapper .valaisan {
   grid-area: valaisan;
 }
+.recipe-wrapper .valaisan .m-number {
+  grid-area: m-number;
+}
+.recipe-wrapper .valaisan .m-name {
+  grid-area: m-name;
+}
+.recipe-wrapper .valaisan .m-price {
+  grid-area: m-price;
+}
 .recipe-wrapper .rosti {
   grid-area: rosti;
+}
+.recipe-wrapper .rosti .m-number {
+  grid-area: m-number;
+}
+.recipe-wrapper .rosti .m-name {
+  grid-area: m-name;
+}
+.recipe-wrapper .rosti .m-price {
+  grid-area: m-price;
 }
 .recipe-wrapper .bais {
   grid-area: bais;
 }
+.recipe-wrapper .bais .m-number {
+  grid-area: m-number;
+}
+.recipe-wrapper .bais .m-name {
+  grid-area: m-name;
+}
+.recipe-wrapper .bais .m-price {
+  grid-area: m-price;
+}
 .recipe-wrapper .heidi {
   grid-area: heidi;
 }
+.recipe-wrapper .heidi .m-number {
+  grid-area: m-number;
+}
+.recipe-wrapper .heidi .m-name {
+  grid-area: m-name;
+}
+.recipe-wrapper .heidi .m-price {
+  grid-area: m-price;
+}
 .recipe-wrapper .Leman {
   grid-area: Leman;
+}
+.recipe-wrapper .Leman .m-number {
+  grid-area: m-number;
+}
+.recipe-wrapper .Leman .m-name {
+  grid-area: m-name;
+}
+.recipe-wrapper .Leman .m-price {
+  grid-area: m-price;
 }
 
 .supplement-wrapeer {
