@@ -5,17 +5,16 @@
 @mixin large-text {
     font: {
         family: Helvetica, sans-serif;
-        size: 133px;
+        size: 8em;
         weight: normal;
     }
-
     color: white;
 }
 
 @mixin medium-text {
     font: {
         family: Helvetica, sans-serif;
-        size: 16px;
+        size: 1em;
         weight: normal;
     }
 }
@@ -23,7 +22,7 @@
 @mixin small-text {
     font: {
         family: Helvetica, sans-serif;
-        size: 14px;
+        size: 0.8em;
         weight: normal;
     }
 }
@@ -48,7 +47,7 @@ body {
 h1 {
     @include large-text;
     margin: 0;
-    padding: 40px 15px;
+    padding: 25px 5px;
 }
 
 p {
@@ -282,8 +281,10 @@ ul {
             left:-50px;
         }
     }
-    .medium-text{
-        
+    @mixin large-text{
+        font:{
+            size: 12em;
+        }
     }
   }
   
