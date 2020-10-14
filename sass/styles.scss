@@ -132,17 +132,34 @@ ul li {
     padding: 0;
     display: grid;
     grid-gap: 10px;
-    grid-column: auto / span 2;
-    grid-template-rows: repeat(7, auto);
-    
-    
+    grid-column: span 2;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
     .recipe-title{
         grid-area: recipe-title;
     }
-    
+    .valaisan{
+        grid-area: valaisan;
+    }
+    .rosti{
+        grid-area: 02;
+    }
+    .bais{
+        grid-area: 03;
+    }
+    .heidi{
+        grid-area: 04;
+    }
+    .Leman{
+        grid-area: 05;
+    }
     grid-template-areas: 
-    "grid-area"
+    "recipe-title recipe-title recipe-title"
+    "valaisan valaisan valaisan"
+    "02 02 02"
+    "03 03 03"
+    "04 04 04"
+    "05 05 05"
 }
 
 .supplement-wrapeer{
