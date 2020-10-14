@@ -104,9 +104,12 @@ ul li {
 //below
 .below-box{
     @include red-border;
-    display: flex;
-    // flex-direction: column;
     position: absolute;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 2%;
+    grid-template-rows: repeat(2,150px);
+    grid-row-gap: 10px;
     bottom: 0;
     width: 100%;
     
