@@ -266,29 +266,24 @@ ul {
     .title-wrapper {
         transform: rotateZ(70deg);
         .salad{
-            position: relative;
-            
+            position: absolute;
+            top:-50px;
+            left:-50px;
         }
     }
-    // nav {
-    //   display: inline-block;
-    //   margin-top: 0;
-    //   width: calc(100% - 220px);
-    // }
-    // nav ul {
-    //   text-align: right;
-    // }
-    // nav li + li {
-    //   margin-left: 24px;
-    // }
+  }
   
-    // .gallery {
-    //   text-align: left;
-    // }
-    // .gallery figure {
-    //   display: inline-block;
-    //   vertical-align: middle;
-    //   width: 42%; /* two columns */
-    // }
+  @media (min-width: 840px) {
+    .title-wrapper {
+        transform: rotateZ(90deg);
+        .salad{
+            position: absolute;
+            top:-50px;
+            left:-50px;
+        }
+    }
+    .medium-text{
+        
+    }
   }
   
