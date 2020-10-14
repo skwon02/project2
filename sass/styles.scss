@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -8,6 +8,7 @@
         size: 133px;
         weight: normal;
     }
+
     color: white;
 }
 
@@ -25,22 +26,25 @@
         size: 14px;
         weight: normal;
     }
-} 
+}
 
 @mixin border {
     border: 1px solid red;
 }
 
-html, body, .wrapper{
+html,
+body,
+.wrapper {
     height: 100%;
+
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
 h1 {
-   @include large-text;
+    @include large-text;
     margin: 0;
 }
 
@@ -48,19 +52,20 @@ p {
     @include medium-text;
 }
 
-ul li{
+ul li {
     @include small-text;
     list-style: none;
     transform: rotate(90deg);
-    
 }
 
-.wrapper{
+.wrapper {
     margin: auto;
 }
 
-.swiss, .bagel, .salad {
-    background-color:  #fb0c1b;
+.swiss,
+.bagel,
+.salad {
+    background-color: #fb0c1b;
     width: 410px;
     height: 150px;
     margin: 0;
@@ -79,4 +84,3 @@ ul li{
 .salad {
     transform: rotate(80deg);
 }
-

@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-html, body, .wrapper {
+html,
+body,
+.wrapper {
   height: 100%;
 }
 
@@ -36,7 +38,9 @@ ul li {
   margin: auto;
 }
 
-.swiss, .bagel, .salad {
+.swiss,
+.bagel,
+.salad {
   background-color: #fb0c1b;
   width: 410px;
   height: 150px;
