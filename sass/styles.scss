@@ -92,6 +92,7 @@ ul li {
     transform: rotate(80deg);
 }
 .info-wrapper{
+    transform:rotate(90deg);
     @include red-border;
     width: 30%;
     position: absolute;
@@ -142,6 +143,7 @@ ul li {
     padding-bottom: 3px;
     border-bottom: 2px solid black;   
 }
+
 .raclette{
     margin-top: 7px;
     .m-name {
@@ -162,6 +164,10 @@ ul li {
 }
 .supplement-wrapeer{
     grid-area: supplement;
+    .m-price{
+        text-align: right;
+        padding-right: 0.2em;
+    }
 }
 
 .supplement-wrapeer > div {
@@ -204,5 +210,10 @@ ul li {
     padding-left: 1em;
 }
 .ice-tea{
-    padding-left: 2.5em;
+    padding-left: 2em;
+    padding-bottom: 10px;
+}
+
+.bagel-boisson .m-name{
+    padding-left: 1em;
 }

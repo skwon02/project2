@@ -69,6 +69,7 @@ ul li {
 }
 
 .info-wrapper {
+  transform: rotate(90deg);
   border: 1px solid red;
   width: 30%;
   position: absolute;
@@ -147,6 +148,10 @@ ul li {
 .supplement-wrapeer {
   grid-area: supplement;
 }
+.supplement-wrapeer .m-price {
+  text-align: right;
+  padding-right: 0.2em;
+}
 
 .supplement-wrapeer > div {
   display: grid;
@@ -192,5 +197,10 @@ ul li {
 }
 
 .ice-tea {
-  padding-left: 2.5em;
+  padding-left: 2em;
+  padding-bottom: 10px;
+}
+
+.bagel-boisson .m-name {
+  padding-left: 1em;
 }
