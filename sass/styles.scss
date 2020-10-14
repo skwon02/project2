@@ -205,6 +205,9 @@ ul {
         padding-right: 0.2em;
     }
 }
+// .menu-etudiant, .bagel-boisson{
+//     grid-area: menu-etudiant;
+// }
 
 .supplement-wrapeer > div {
     display: grid;
@@ -281,10 +284,11 @@ ul {
     h1{
         font-size: 10em;
     }
+  }
+@media (min-width: 970px){
     .below-box{
         grid-template-areas: 
-        " intro intro supplement supplement"
-        " recipe recipe supplement supplement"
+        " intro recipe supplement menu-etudiant"
+        " intro recipe supplement menu-etudiant"
     }
-  }
-  
+}
