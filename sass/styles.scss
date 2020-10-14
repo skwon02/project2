@@ -140,15 +140,15 @@ ul li {
     justify-content: space-between;
 }
 
-// .m-number{
-//     width: 20%;
-// }
-// .m-name{
-//     width: 40%;
-// }
-// .m-price{
-//     width: 40%;
-// }
+.m-number{
+    flex-grow: 0.5;
+}
+.m-name{
+    flex-grow: 2;
+}
+.m-price{
+    flex-grow: 1;
+}
 .supplement-wrapeer{
     grid-area: supplement;
 }

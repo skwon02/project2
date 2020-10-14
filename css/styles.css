@@ -103,6 +103,18 @@ ul li {
   justify-content: space-between;
 }
 
+.m-number {
+  flex-grow: 0.5;
+}
+
+.m-name {
+  flex-grow: 2;
+}
+
+.m-price {
+  flex-grow: 1;
+}
+
 .supplement-wrapeer {
   grid-area: supplement;
 }
