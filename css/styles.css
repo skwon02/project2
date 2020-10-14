@@ -22,7 +22,7 @@ h1 {
 
 p {
   font-family: Helvetica, sans-serif;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: normal;
   margin: 0;
 }
@@ -83,7 +83,7 @@ ul li {
   grid-row-gap: 10px;
   bottom: 0;
   width: 100%;
-  grid-template-areas: " intro";
+  grid-template-areas: " intro intro supplement supplement" " recipe recipe supplement supplement";
 }
 
 .intro-wrapper, .recipe-wrapper, .supplement-wrapeer {
