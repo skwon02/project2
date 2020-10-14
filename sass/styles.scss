@@ -61,6 +61,10 @@ ul li {
     margin: auto;
 }
 
+.upper-box{
+    @include border;
+    margin: 0 5%;
+}
 .swiss,
 .bagel,
 .salad {
@@ -86,6 +90,9 @@ ul li {
 
 .below-box{
     @include border;
-    margin: 2% 2% 0 2%;
+    margin: 0 5%;
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+    grid-template-rows: 150px;
 }
