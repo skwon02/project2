@@ -37,7 +37,9 @@ body,
 body {
     margin: 0;
 }
-
+a {
+    color:black;
+}
 h1 {
     @include large-text;
     margin: 0;
