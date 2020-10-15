@@ -237,6 +237,7 @@ ul {
 
 .supplement2{
     grid-area: supplement2;
+    .title2 {display: none;}
 }
 
 .supplement-wrapeer>div {
@@ -326,5 +327,10 @@ ul {
         grid-template-areas:
             " intro recipe supplement supplement2"
             " intro recipe supplement supplement2"
+    }
+    .supplement2 {
+        .title2 {
+            display: grid;
+        }
     }
 }

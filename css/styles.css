@@ -189,6 +189,9 @@ ul li {
 .supplement2 {
   grid-area: supplement2;
 }
+.supplement2 .title2 {
+  display: none;
+}
 
 .supplement-wrapeer > div {
   display: grid;
@@ -272,5 +275,9 @@ ul li {
 @media (min-width: 970px) {
   .below-box {
     grid-template-areas: " intro recipe supplement supplement2" " intro recipe supplement supplement2";
+  }
+
+  .supplement2 .title2 {
+    display: grid;
   }
 }
