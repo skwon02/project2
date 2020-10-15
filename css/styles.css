@@ -280,4 +280,7 @@ ul li {
   .supplement2 .title2 {
     display: grid;
   }
+  .supplement2 .bossion {
+    padding-top: 7px;
+  }
 }
