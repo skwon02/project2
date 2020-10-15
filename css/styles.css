@@ -49,6 +49,7 @@ ul li {
 .upper-box {
   position: relative;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .title-wrapper {
