@@ -165,7 +165,7 @@ ul {
     z-index: 2;
     grid-template-areas:
         " intro intro supplement supplement"
-        " recipe recipe supplement supplement"
+        " recipe recipe supplement2 supplement2"
 }
 
 .intro-wrapper {
@@ -235,9 +235,9 @@ ul {
     }
 }
 
-// .menu-etudiant, .bagel-boisson{
-//     grid-area: menu-etudiant;
-// }
+.supplement2{
+    grid-area: supplement2;
+}
 
 .supplement-wrapeer>div {
     display: grid;
@@ -324,7 +324,7 @@ ul {
 @media (min-width: 970px) {
     .below-box {
         grid-template-areas:
-            " intro recipe supplement menu-etudiant"
-            " intro recipe supplement menu-etudiant"
+            " intro recipe supplement supplement2"
+            " intro recipe supplement supplement2"
     }
 }
