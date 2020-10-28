@@ -79,7 +79,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
     width: 80%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
         "swiss bagel salad"
         "swiss bagel salad"
